@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head> 
+        <title> SignUp Page </title>
+       <script type="text/javascript">
+  function saveInLocalStorage(){
+if (typeof(Storage) !== "undefined"){
+    var uname = document.getElementById('Text-field').value;
+    var email = document.getElementById('Email-field1').value;
+    var pwd = document.getElementById('Pwd-field2').value;
+    localStorage.setItem("Text-field",uname);
+     localStorage.setItem("Email-field1",email);
+      localStorage.setItem("Pwd-field2",pwd);
+}  };
+</script>
+        </head>
+        <body style="text-align:center;">
+ <form id="Signup">
+            <h1>MySelfieTech</h1>
+            <input required="" name="uname" placeholder="Username" type="text" id="Text-field"/><br>
+<br><input required="" type="email" name="email" placeholder="Email"id="Email-field1"/><br>
+<br><input required="" name="pwd" placeholder="Password" type="text"id="Pwd-field2"/><br>
+<br><button onclick="saveInLocalStorage();"id="button">Submit Query</button>
+                    </form>   
+<br><a href="Assignment8.2.html" id="MainPage"><button>Back</button></a>
+                    </body> </html>

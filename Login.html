@@ -1,0 +1,29 @@
+ <!Doctype html>
+<html>
+    <head>
+        <title> Login Page </title>
+        <style>
+        #back{
+        text-align:right;
+        }</style>
+        </head><body style="text-align:center">
+<form id="LoginPage">
+            <h1>MySelfieTech</h1>
+<br><input required="" type="email" name="email" placeholder="Email"id="Email-field1"/><br>
+<br><input required="" name="pwd" placeholder="Password" type="text"id="Pwd-field2"/><br>
+<br><button onclick="check(this.form);">Submit Query</button></a><p id="incorrect"></p>              
+    </form> <a href="Assignment8.2.html" id="MainPage"><button id="back">Back</button></a>   
+         <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if((form.email.value !== "undefined") && (form.pwd.value !== "undefined")) {
+                    window.open('HomePage.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                   document.getElementById("incorrect").innerHTML="user or password is in correct";
+                }
+            };
+        </script>
+     
+                    </body> </html>
+    
